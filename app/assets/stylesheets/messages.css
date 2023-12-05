@@ -11,12 +11,41 @@
 .side-bar-header{ 
   height: 100px;
   padding: 0 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+/* header-nameクラスを持った要素の、子要素のaタグに対してという意味 */
+.header-name a{
+  color: #FAFAFA;
+  font-size: 16px;
+  text-decoration: none;
+}
+
+.create-room a{
+  color: deepskyblue;
+  font-size: 10px;
+  padding: 14px;
+  border: 1px solid lightblue;
+  text-decoration: none;
 }
 
 .rooms{  
   height: calc(100vh - 100px);
   background-color: #2F3E51;
   padding: 0 20px;
+  overflow: scroll;
+}
+
+.room{
+  padding: 20px 0 40px;
+}
+
+/* 一度divでくくることでブロック要素として扱うことができる */
+.room-name a{
+  text-decoration: none;
+  color: white;
 }
 
 .chat{  
